@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المشاريع - الخوارزمي للحلول الذكية</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo.png" alt="الخوارزمي للحلول الذكية" height="50">
+                </a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html" data-key="nav_home">الرئيسية</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html" data-key="nav_about">عن الشركة</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="products.html" data-key="nav_products">المنتجات</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="projects.html" data-key="nav_projects">المشاريع</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="news.html" data-key="nav_news">الأخبار</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html" data-key="nav_contact">تواصل معنا</a>
+                        </li>
+                    </ul>
+                    
+                    <div class="d-flex align-items-center">
+                        <button class="btn btn-outline-primary me-3" id="requestServiceBtn" data-key="nav_request_service">طلب خدمة</button>
+                        <div class="language-switcher">
+                            <button class="btn btn-sm btn-outline-secondary" id="langSwitch">
+                                <i class="fas fa-globe"></i> EN
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header bg-primary text-white py-5" style="margin-top: 80px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="display-4 fw-bold" data-key="projects_page_title">مشاريعنا</h1>
+                    <p class="lead" data-key="projects_page_subtitle">اكتشف إنجازاتنا ومشاريعنا الناجحة</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Projects -->
+    <section class="featured-projects py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5" data-aos="fade-up">
+                    <h2 class="section-title" data-key="projects_featured_title">مشاريعنا المميزة</h2>
+                    <p class="section-subtitle" data-key="projects_featured_subtitle">نفتخر بإنجازاتنا ومشاريعنا الناجحة</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://via.placeholder.com/600x400/007bff/ffffff?text=مشروع+الذكاء+الاصطناعي+في+القطاع+الصحي" alt="مشروع الذكاء الاصطناعي">
+                            <div class="project-overlay">
+                                <a href="project-detail.html" class="btn btn-light">
+                                    <i class="fas fa-eye me-1"></i> عرض التفاصيل
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-category">
+                                <span class="badge bg-primary">الذكاء الاصطناعي</span>
+                            </div>
+                            <h4>مشروع الذكاء الاصطناعي في القطاع الصحي</h4>
+                            <p>تطبيق متطور للذكاء الاصطناعي يساعد في تشخيص الأمراض وتحليل الصور الطبية</p>
+                            <div class="project-stats">
+                                <div class="stat">
+                                    <span class="stat-number">95%</span>
+                                    <span class="stat-label">دقة التشخيص</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-number">50+</span>
+                                    <span class="stat-label">مستشفى</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-number">6</span>
+                                    <span class="stat-label">أشهر</span>
+                                </div>
+                            </div>
+                            <div class="project-actions">
+                                <a href="project-detail.html" class="btn btn-primary">عرض التفاصيل</a>
+                                <button class="btn btn-outline-primary" onclick="requestCaseStudy('ai-health')">طلب دراسة حالة</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://via.placeholder.com/600x400/28a745/ffffff?text=منصة+التعليم+الإلكتروني+الشاملة" alt="منصة التعليم الإلكتروني">
+                            <div class="project-overlay">
+                                <a href="project-detail.html" class="btn btn-light">
+                                    <i class="fas fa-eye me-1"></i> عرض التفاصيل
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-category">
+                                <span class="badge bg-success">التعليم</span>
+                            </div>
+                            <h4>منصة التعليم الإلكتروني الشاملة</h4>
+                            <p>منصة متطورة للتعليم عن بُعد تشمل جميع المراحل التعليمية</p>
+                            <div class="project-stats">
+                                <div class="stat">
+                                    <span class="stat-number">10K+</span>
+                                    <span class="stat-label">طالب</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-number">500+</span>
+                                    <span class="stat-label">دورة</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-number">12</span>
+                                    <span class="stat-label">شهر</span>
+                                </div>
+                            </div>
+                            <div class="project-actions">
+                                <a href="project-detail.html" class="btn btn-primary">عرض التفاصيل</a>
+                                <button class="btn btn-outline-primary" onclick="requestCaseStudy('elearning')">طلب دراسة حالة</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://via.placeholder.com/600x400/dc3545/ffffff?text=نظام+إدارة+المدن+الذكية" alt="نظام إدارة المدن الذكية">
+                            <div class="project-overlay">
+                                <a href="project-detail.html" class="btn btn-light">
+                                    <i class="fas fa-eye me-1"></i> عرض التفاصيل
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-category">
+                                <span class="badge bg-danger">المدن الذكية</span>
+                            </div>
+                            <h4>نظام إدارة المدن الذكية</h4>
+                            <p>حل متكامل لإدارة المرافق والخدمات في المدن الذكية</p>
+                            <div class="project-stats">
+                                <div class="stat">
+                                    <span class="stat-number">1M+</span>
+                                    <span class="stat-label">مواطن</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-number">50+</span>
+                                    <span class="stat-label">خدمة</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-number">18</span>
+                                    <span class="stat-label">شهر</span>
+                                </div>
+                            </div>
+                            <div class="project-actions">
+                                <a href="project-detail.html" class="btn btn-primary">عرض التفاصيل</a>
+                                <button class="btn btn-outline-primary" onclick="requestCaseStudy('smart-city')">طلب دراسة حالة</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://via.placeholder.com/600x400/6f42c1/ffffff?text=منصة+التجارة+الإلكترونية+المتقدمة" alt="منصة التجارة الإلكترونية">
+                            <div class="project-overlay">
+                                <a href="project-detail.html" class="btn btn-light">
+                                    <i class="fas fa-eye me-1"></i> عرض التفاصيل
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-category">
+                                <span class="badge bg-purple">التجارة الإلكترونية</span>
+                            </div>
+                            <h4>منصة التجارة الإلكترونية المتقدمة</h4>
+                            <p>منصة شاملة للتجارة الإلكترونية مع دعم الذكاء الاصطناعي</p>
+                            <div class="project-stats">
+                                <div class="stat">
+                                    <span class="stat-number">500K+</span>
+                                    <span class="stat-label">منتج</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-number">100K+</span>
+                                    <span class="stat-label">عميل</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-number">9</span>
+                                    <span class="stat-label">شهر</span>
+                                </div>
+                            </div>
+                            <div class="project-actions">
+                                <a href="project-detail.html" class="btn btn-primary">عرض التفاصيل</a>
+                                <button class="btn btn-outline-primary" onclick="requestCaseStudy('ecommerce')">طلب دراسة حالة</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Statistics -->
+    <section class="project-stats py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5" data-aos="fade-up">
+                    <h2 class="section-title" data-key="projects_stats_title">إحصائيات مشاريعنا</h2>
+                    <p class="section-subtitle" data-key="projects_stats_subtitle">أرقام تتحدث عن نجاحنا</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="stat-card text-center">
+                        <div class="stat-icon">
+                            <i class="fas fa-project-diagram"></i>
+                        </div>
+                        <h3 class="stat-number">100+</h3>
+                        <p class="stat-label" data-key="projects_completed">مشروع مكتمل</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stat-card text-center">
+                        <div class="stat-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3 class="stat-number">500+</h3>
+                        <p class="stat-label" data-key="projects_clients">عميل راضٍ</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="stat-card text-center">
+                        <div class="stat-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3 class="stat-number">99%</h3>
+                        <p class="stat-label" data-key="projects_on_time">تسليم في الوقت</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="stat-card text-center">
+                        <div class="stat-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h3 class="stat-number">4.9</h3>
+                        <p class="stat-label" data-key="projects_rating">تقييم العملاء</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Categories -->
+    <section class="project-categories py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5" data-aos="fade-up">
+                    <h2 class="section-title" data-key="projects_categories_title">مجالات مشاريعنا</h2>
+                    <p class="section-subtitle" data-key="projects_categories_subtitle">نعمل في مختلف المجالات التقنية</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-hospital"></i>
+                        </div>
+                        <h4 data-key="category_healthcare_title">القطاع الصحي</h4>
+                        <p data-key="category_healthcare_desc">حلول متطورة لإدارة المستشفيات والمراكز الصحية</p>
+                        <div class="category-stats">
+                            <span class="badge bg-primary">25 مشروع</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h4 data-key="category_education_title">التعليم</h4>
+                        <p data-key="category_education_desc">منصات تعليمية متطورة ونظم إدارة المدارس</p>
+                        <div class="category-stats">
+                            <span class="badge bg-success">30 مشروع</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <h4 data-key="category_government_title">الحكومة</h4>
+                        <p data-key="category_government_desc">حلول الخدمات الإلكترونية والحكومة الرقمية</p>
+                        <div class="category-stats">
+                            <span class="badge bg-warning">20 مشروع</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <h4 data-key="category_ecommerce_title">التجارة الإلكترونية</h4>
+                        <p data-key="category_ecommerce_desc">منصات تجارة إلكترونية متطورة ومتاجر رقمية</p>
+                        <div class="category-stats">
+                            <span class="badge bg-info">15 مشروع</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-industry"></i>
+                        </div>
+                        <h4 data-key="category_manufacturing_title">التصنيع</h4>
+                        <p data-key="category_manufacturing_desc">حلول إدارة الإنتاج والجودة في المصانع</p>
+                        <div class="category-stats">
+                            <span class="badge bg-secondary">10 مشروع</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h4 data-key="category_mobile_title">تطبيقات الجوال</h4>
+                        <p data-key="category_mobile_desc">تطبيقات جوال متطورة لجميع المنصات</p>
+                        <div class="category-stats">
+                            <span class="badge bg-dark">40 مشروع</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section py-5 bg-primary text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8" data-aos="fade-right">
+                    <h3 data-key="projects_cta_title">هل تريد رؤية المزيد من مشاريعنا؟</h3>
+                    <p data-key="projects_cta_subtitle">تواصل معنا للحصول على عرض توضيحي لمشاريعنا</p>
+                </div>
+                <div class="col-lg-4 text-lg-end" data-aos="fade-left">
+                    <a href="contact.html" class="btn btn-light btn-lg" data-key="projects_cta_button">تواصل معنا</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="footer-brand">
+                        <img src="images/logo.png" alt="الخوارزمي للحلول الذكية" height="50" class="mb-3">
+                        <p data-key="footer_description">نقدم حلولاً تقنية متطورة وذكية لتحويل رؤيتك إلى واقع رقمي متميز</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 data-key="footer_quick_links">روابط سريعة</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="about.html" data-key="nav_about">عن الشركة</a></li>
+                        <li><a href="products.html" data-key="nav_products">المنتجات</a></li>
+                        <li><a href="projects.html" data-key="nav_projects">المشاريع</a></li>
+                        <li><a href="contact.html" data-key="nav_contact">تواصل معنا</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 data-key="footer_services">خدماتنا</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" data-key="service_web_development">تطوير المواقع</a></li>
+                        <li><a href="#" data-key="service_mobile_apps">تطبيقات الجوال</a></li>
+                        <li><a href="#" data-key="service_ai_solutions">حلول الذكاء الاصطناعي</a></li>
+                        <li><a href="#" data-key="service_cloud_solutions">الحلول السحابية</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h5 data-key="footer_contact">تواصل معنا</h5>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone me-2"></i> <span data-key="footer_phone">+966 50 123 4567</span></p>
+                        <p><i class="fas fa-envelope me-2"></i> <span data-key="footer_email">info@alkhwarizmi.com</span></p>
+                        <p><i class="fas fa-map-marker-alt me-2"></i> <span data-key="footer_address">مارب ، اليمن</span></p>
+                    </div>
+                    <div class="social-links mt-3">
+                        <a href="#" class="me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0" data-key="footer_copyright">&copy; 2024 الخوارزمي للحلول الذكية. جميع الحقوق محفوظة.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" data-key="footer_privacy">سياسة الخصوصية</a> | 
+                    <a href="#" data-key="footer_terms">شروط الاستخدام</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Container -->
+    <div class="toast-container position-fixed top-0 end-0 p-3">
+        <div id="notificationToast" class="toast" role="alert">
+            <div class="toast-header">
+                <i class="fas fa-bell text-primary me-2"></i>
+                <strong class="me-auto" data-key="toast_notification">إشعار</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+            </div>
+            <div class="toast-body" id="toastMessage">
+                <!-- Toast message will be inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Request Service Modal -->
+    <div class="modal fade" id="requestServiceModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" data-key="modal_request_service_title">طلب خدمة</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="requestServiceForm">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label class="form-label" data-key="form_name">الاسم</label>
+                                <input type="text" class="form-control" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label" data-key="form_email">البريد الإلكتروني</label>
+                                <input type="email" class="form-control" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label" data-key="form_phone">رقم الهاتف</label>
+                                <input type="tel" class="form-control" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label" data-key="form_company">الشركة</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label" data-key="form_service_type">نوع الخدمة</label>
+                                <select class="form-select" required>
+                                    <option value="" data-key="form_select_service">اختر نوع الخدمة</option>
+                                    <option value="web" data-key="form_web_development">تطوير المواقع</option>
+                                    <option value="mobile" data-key="form_mobile_apps">تطبيقات الجوال</option>
+                                    <option value="ai" data-key="form_ai_solutions">حلول الذكاء الاصطناعي</option>
+                                    <option value="cloud" data-key="form_cloud_solutions">الحلول السحابية</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label" data-key="form_budget">الميزانية المتوقعة</label>
+                                <select class="form-select">
+                                    <option value="" data-key="form_select_budget">اختر الميزانية</option>
+                                    <option value="5k-10k" data-key="form_budget_5k_10k">5,000 - 10,000 ريال</option>
+                                    <option value="10k-25k" data-key="form_budget_10k_25k">10,000 - 25,000 ريال</option>
+                                    <option value="25k-50k" data-key="form_budget_25k_50k">25,000 - 50,000 ريال</option>
+                                    <option value="50k+" data-key="form_budget_50k_plus">أكثر من 50,000 ريال</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label" data-key="form_requirements">متطلبات المشروع</label>
+                                <textarea class="form-control" rows="4" placeholder="اكتب متطلباتك بالتفصيل" data-key="form_requirements_placeholder"></textarea>
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label" data-key="form_attachments">المرفقات (اختياري)</label>
+                                <input type="file" class="form-control" multiple accept=".pdf,.doc,.docx,.jpg,.png">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" data-key="form_cancel">إلغاء</button>
+                    <button type="button" class="btn btn-primary" id="submitRequestBtn" data-key="form_submit">إرسال الطلب</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/lang.js"></script>
+    <script src="assets/js/main.js"></script>
+    
+    <!-- Projects Script -->
+    <script>
+        // Request case study function
+        function requestCaseStudy(projectType) {
+            showNotification(`تم إرسال طلب دراسة حالة لمشروع ${projectType}`, 'success');
+        }
+    </script>
+</body>
+</html>

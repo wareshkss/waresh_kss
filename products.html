@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المنتجات - الخوارزمي للحلول الذكية</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo.png" alt="الخوارزمي للحلول الذكية" height="50">
+                </a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html" data-key="nav_home">الرئيسية</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html" data-key="nav_about">عن الشركة</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="products.html" data-key="nav_products">المنتجات</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="projects.html" data-key="nav_projects">المشاريع</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="news.html" data-key="nav_news">الأخبار</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html" data-key="nav_contact">تواصل معنا</a>
+                        </li>
+                    </ul>
+                    
+                    <div class="d-flex align-items-center">
+                        <button class="btn btn-outline-primary me-3" id="requestServiceBtn" data-key="nav_request_service">طلب خدمة</button>
+                        <div class="language-switcher">
+                            <button class="btn btn-sm btn-outline-secondary" id="langSwitch">
+                                <i class="fas fa-globe"></i> EN
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header bg-primary text-white py-5" style="margin-top: 80px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="display-4 fw-bold" data-key="products_page_title">منتجاتنا</h1>
+                    <p class="lead" data-key="products_page_subtitle">اكتشف حلولنا التقنية المتطورة</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="filter-section py-4 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="filter-buttons text-center">
+                        <button class="btn btn-outline-primary me-2 mb-2 filter-btn active" data-filter="all">
+                            <i class="fas fa-th-large me-1"></i> جميع المنتجات
+                        </button>
+                        <button class="btn btn-outline-primary me-2 mb-2 filter-btn" data-filter="healthcare">
+                            <i class="fas fa-hospital me-1"></i> القطاع الصحي
+                        </button>
+                        <button class="btn btn-outline-primary me-2 mb-2 filter-btn" data-filter="education">
+                            <i class="fas fa-graduation-cap me-1"></i> التعليم
+                        </button>
+                        <button class="btn btn-outline-primary me-2 mb-2 filter-btn" data-filter="business">
+                            <i class="fas fa-briefcase me-1"></i> الأعمال
+                        </button>
+                        <button class="btn btn-outline-primary me-2 mb-2 filter-btn" data-filter="government">
+                            <i class="fas fa-building me-1"></i> الحكومة
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="products-section py-5">
+        <div class="container">
+            <div class="row g-4" id="productsGrid">
+                <!-- Healthcare Products -->
+                <div class="col-lg-4 col-md-6 product-item" data-category="healthcare" data-aos="fade-up" data-aos-delay="100">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://via.placeholder.com/400x250/007bff/ffffff?text=نظام+إدارة+المستشفيات" alt="نظام إدارة المستشفيات">
+                            <div class="product-overlay">
+                                <a href="product-detail.html" class="btn btn-light">
+                                    <i class="fas fa-eye me-1"></i> عرض التفاصيل
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <div class="product-category">
+                                <span class="badge bg-primary">القطاع الصحي</span>
+                            </div>
+                            <h4>نظام إدارة المستشفيات</h4>
+                            <p>نظام شامل لإدارة جميع عمليات المستشفى من المواعيد إلى الفواتير</p>
+                            <div class="product-features">
+                                <span class="feature-tag">إدارة المواعيد</span>
+                                <span class="feature-tag">السجلات الطبية</span>
+                                <span class="feature-tag">الفواتير</span>
+                            </div>
+                            <div class="product-actions">
+                                <a href="product-detail.html" class="btn btn-primary">عرض التفاصيل</a>
+                                <button class="btn btn-outline-primary" onclick="requestDemo('hospital')">طلب عرض</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 product-item" data-category="healthcare" data-aos="fade-up" data-aos-delay="200">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://via.placeholder.com/400x250/28a745/ffffff?text=نظام+الصيدليات" alt="نظام إدارة الصيدليات">
+                            <div class="product-overlay">
+                                <a href="product-detail.html" class="btn btn-light">
+                                    <i class="fas fa-eye me-1"></i> عرض التفاصيل
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <div class="product-category">
+                                <span class="badge bg-success">القطاع الصحي</span>
+                            </div>
+                            <h4>نظام إدارة الصيدليات</h4>
+                            <p>حل متكامل لإدارة المخزون والمبيعات في الصيدليات</p>
+                            <div class="product-features">
+                                <span class="feature-tag">إدارة المخزون</span>
+                                <span class="feature-tag">المبيعات</span>
+                                <span class="feature-tag">التقارير</span>
+                            </div>
+                            <div class="product-actions">
+                                <a href="product-detail.html" class="btn btn-primary">عرض التفاصيل</a>
+                                <button class="btn btn-outline-primary" onclick="requestDemo('pharmacy')">طلب عرض</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Education Products -->
+                <div class="col-lg-4 col-md-6 product-item" data-category="education" data-aos="fade-up" data-aos-delay="300">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://via.placeholder.com/400x250/dc3545/ffffff?text=نظام+إدارة+المدارس" alt="نظام إدارة المدارس">
+                            <div class="product-overlay">
+                                <a href="product-detail.html" class="btn btn-light">
+                                    <i class="fas fa-eye me-1"></i> عرض التفاصيل
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <div class="product-category">
+                                <span class="badge bg-danger">التعليم</span>
+                            </div>
+                            <h4>نظام إدارة المدارس</h4>
+                            <p>حل متكامل لإدارة العملية التعليمية والطلاب</p>
+                            <div class="product-features">
+                                <span class="feature-tag">إدارة الطلاب</span>
+                                <span class="feature-tag">الدرجات</span>
+                                <span class="feature-tag">المواعيد</span>
+                            </div>
+                            <div class="product-actions">
+                                <a href="product-detail.html" class="btn btn-primary">عرض التفاصيل</a>
+                                <button class="btn btn-outline-primary" onclick="requestDemo('school')">طلب عرض</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 product-item" data-category="education" data-aos="fade-up" data-aos-delay="400">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://via.placeholder.com/400x250/6f42c1/ffffff?text=منصة+التعليم+الإلكتروني" alt="منصة التعليم الإلكتروني">
+                            <div class="product-overlay">
+                                <a href="product-detail.html" class="btn btn-light">
+                                    <i class="fas fa-eye me-1"></i> عرض التفاصيل
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <div class="product-category">
+                                <span class="badge bg-purple">التعليم</span>
+                            </div>
+                            <h4>منصة التعليم الإلكتروني</h4>
+                            <p>منصة شاملة للتعليم عن بُعد والتعلم الإلكتروني</p>
+                            <div class="product-features">
+                                <span class="feature-tag">الدورات</span>
+                                <span class="feature-tag">الاختبارات</span>
+                                <span class="feature-tag">التفاعل</span>
+                            </div>
+                            <div class="product-actions">
+                                <a href="product-detail.html" class="btn btn-primary">عرض التفاصيل</a>
+                                <button class="btn btn-outline-primary" onclick="requestDemo('elearning')">طلب عرض</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Business Products -->
+                <div class="col-lg-4 col-md-6 product-item" data-category="business" data-aos="fade-up" data-aos-delay="500">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://via.placeholder.com/400x250/fd7e14/ffffff?text=نظام+إدارة+المخازن" alt="نظام إدارة المخازن">
+                            <div class="product-overlay">
+                                <a href="product-detail.html" class="btn btn-light">
+                                    <i class="fas fa-eye me-1"></i> عرض التفاصيل
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <div class="product-category">
+                                <span class="badge bg-warning">الأعمال</span>
+                            </div>
+                            <h4>نظام إدارة المخازن</h4>
+                            <p>إدارة ذكية للمخزون والمستودعات</p>
+                            <div class="product-features">
+                                <span class="feature-tag">إدارة المخزون</span>
+                                <span class="feature-tag">التتبع</span>
+                                <span class="feature-tag">التقارير</span>
+                            </div>
+                            <div class="product-actions">
+                                <a href="product-detail.html" class="btn btn-primary">عرض التفاصيل</a>
+                                <button class="btn btn-outline-primary" onclick="requestDemo('warehouse')">طلب عرض</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 product-item" data-category="business" data-aos="fade-up" data-aos-delay="600">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://via.placeholder.com/400x250/20c997/ffffff?text=نظام+إدارة+الموارد+البشرية" alt="نظام إدارة الموارد البشرية">
+                            <div class="product-overlay">
+                                <a href="product-detail.html" class="btn btn-light">
+                                    <i class="fas fa-eye me-1"></i> عرض التفاصيل
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <div class="product-category">
+                                <span class="badge bg-info">الأعمال</span>
+                            </div>
+                            <h4>نظام إدارة الموارد البشرية</h4>
+                            <p>حل متكامل لإدارة شؤون الموظفين والرواتب</p>
+                            <div class="product-features">
+                                <span class="feature-tag">الموظفين</span>
+                                <span class="feature-tag">الرواتب</span>
+                                <span class="feature-tag">الإجازات</span>
+                            </div>
+                            <div class="product-actions">
+                                <a href="product-detail.html" class="btn btn-primary">عرض التفاصيل</a>
+                                <button class="btn btn-outline-primary" onclick="requestDemo('hr')">طلب عرض</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Government Products -->
+                <div class="col-lg-4 col-md-6 product-item" data-category="government" data-aos="fade-up" data-aos-delay="700">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://via.placeholder.com/400x250/6c757d/ffffff?text=نظام+الخدمات+الإلكترونية" alt="نظام الخدمات الإلكترونية">
+                            <div class="product-overlay">
+                                <a href="product-detail.html" class="btn btn-light">
+                                    <i class="fas fa-eye me-1"></i> عرض التفاصيل
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <div class="product-category">
+                                <span class="badge bg-secondary">الحكومة</span>
+                            </div>
+                            <h4>نظام الخدمات الإلكترونية</h4>
+                            <p>منصة شاملة للخدمات الحكومية الإلكترونية</p>
+                            <div class="product-features">
+                                <span class="feature-tag">الخدمات</span>
+                                <span class="feature-tag">المعاملات</span>
+                                <span class="feature-tag">المتابعة</span>
+                            </div>
+                            <div class="product-actions">
+                                <a href="product-detail.html" class="btn btn-primary">عرض التفاصيل</a>
+                                <button class="btn btn-outline-primary" onclick="requestDemo('egovernment')">طلب عرض</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 product-item" data-category="government" data-aos="fade-up" data-aos-delay="800">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://via.placeholder.com/400x250/0d6efd/ffffff?text=نظام+إدارة+الهوية+الرقمية" alt="نظام إدارة الهوية الرقمية">
+                            <div class="product-overlay">
+                                <a href="product-detail.html" class="btn btn-light">
+                                    <i class="fas fa-eye me-1"></i> عرض التفاصيل
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <div class="product-category">
+                                <span class="badge bg-primary">الحكومة</span>
+                            </div>
+                            <h4>نظام إدارة الهوية الرقمية</h4>
+                            <p>حل متطور لإدارة الهويات الرقمية والتحقق</p>
+                            <div class="product-features">
+                                <span class="feature-tag">الهوية</span>
+                                <span class="feature-tag">التحقق</span>
+                                <span class="feature-tag">الأمان</span>
+                            </div>
+                            <div class="product-actions">
+                                <a href="product-detail.html" class="btn btn-primary">عرض التفاصيل</a>
+                                <button class="btn btn-outline-primary" onclick="requestDemo('digital-id')">طلب عرض</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section py-5 bg-primary text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8" data-aos="fade-right">
+                    <h3 data-key="products_cta_title">هل تريد معرفة المزيد عن منتجاتنا؟</h3>
+                    <p data-key="products_cta_subtitle">تواصل معنا للحصول على عرض توضيحي مجاني</p>
+                </div>
+                <div class="col-lg-4 text-lg-end" data-aos="fade-left">
+                    <a href="contact.html" class="btn btn-light btn-lg" data-key="products_cta_button">تواصل معنا</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="footer-brand">
+                        <img src="images/logo.png" alt="الخوارزمي للحلول الذكية" height="50" class="mb-3">
+                        <p data-key="footer_description">نقدم حلولاً تقنية متطورة وذكية لتحويل رؤيتك إلى واقع رقمي متميز</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 data-key="footer_quick_links">روابط سريعة</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="about.html" data-key="nav_about">عن الشركة</a></li>
+                        <li><a href="products.html" data-key="nav_products">المنتجات</a></li>
+                        <li><a href="projects.html" data-key="nav_projects">المشاريع</a></li>
+                        <li><a href="contact.html" data-key="nav_contact">تواصل معنا</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 data-key="footer_services">خدماتنا</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" data-key="service_web_development">تطوير المواقع</a></li>
+                        <li><a href="#" data-key="service_mobile_apps">تطبيقات الجوال</a></li>
+                        <li><a href="#" data-key="service_ai_solutions">حلول الذكاء الاصطناعي</a></li>
+                        <li><a href="#" data-key="service_cloud_solutions">الحلول السحابية</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h5 data-key="footer_contact">تواصل معنا</h5>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone me-2"></i> <span data-key="footer_phone">+966 50 123 4567</span></p>
+                        <p><i class="fas fa-envelope me-2"></i> <span data-key="footer_email">info@alkhwarizmi.com</span></p>
+                        <p><i class="fas fa-map-marker-alt me-2"></i> <span data-key="footer_address">مارب ، اليمن  </span></p>
+                    </div>
+                    <div class="social-links mt-3">
+                        <a href="#" class="me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0" data-key="footer_copyright">&copy; 2024 الخوارزمي للحلول الذكية. جميع الحقوق محفوظة.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" data-key="footer_privacy">سياسة الخصوصية</a> | 
+                    <a href="#" data-key="footer_terms">شروط الاستخدام</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Container -->
+    <div class="toast-container position-fixed top-0 end-0 p-3">
+        <div id="notificationToast" class="toast" role="alert">
+            <div class="toast-header">
+                <i class="fas fa-bell text-primary me-2"></i>
+                <strong class="me-auto" data-key="toast_notification">إشعار</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+            </div>
+            <div class="toast-body" id="toastMessage">
+                <!-- Toast message will be inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Request Service Modal -->
+    <div class="modal fade" id="requestServiceModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" data-key="modal_request_service_title">طلب خدمة</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="requestServiceForm">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label class="form-label" data-key="form_name">الاسم</label>
+                                <input type="text" class="form-control" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label" data-key="form_email">البريد الإلكتروني</label>
+                                <input type="email" class="form-control" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label" data-key="form_phone">رقم الهاتف</label>
+                                <input type="tel" class="form-control" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label" data-key="form_company">الشركة</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label" data-key="form_service_type">نوع الخدمة</label>
+                                <select class="form-select" required>
+                                    <option value="" data-key="form_select_service">اختر نوع الخدمة</option>
+                                    <option value="web" data-key="form_web_development">تطوير المواقع</option>
+                                    <option value="mobile" data-key="form_mobile_apps">تطبيقات الجوال</option>
+                                    <option value="ai" data-key="form_ai_solutions">حلول الذكاء الاصطناعي</option>
+                                    <option value="cloud" data-key="form_cloud_solutions">الحلول السحابية</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label" data-key="form_budget">الميزانية المتوقعة</label>
+                                <select class="form-select">
+                                    <option value="" data-key="form_select_budget">اختر الميزانية</option>
+                                    <option value="5k-10k" data-key="form_budget_5k_10k">5,000 - 10,000 ريال</option>
+                                    <option value="10k-25k" data-key="form_budget_10k_25k">10,000 - 25,000 ريال</option>
+                                    <option value="25k-50k" data-key="form_budget_25k_50k">25,000 - 50,000 ريال</option>
+                                    <option value="50k+" data-key="form_budget_50k_plus">أكثر من 50,000 ريال</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label" data-key="form_requirements">متطلبات المشروع</label>
+                                <textarea class="form-control" rows="4" placeholder="اكتب متطلباتك بالتفصيل" data-key="form_requirements_placeholder"></textarea>
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label" data-key="form_attachments">المرفقات (اختياري)</label>
+                                <input type="file" class="form-control" multiple accept=".pdf,.doc,.docx,.jpg,.png">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" data-key="form_cancel">إلغاء</button>
+                    <button type="button" class="btn btn-primary" id="submitRequestBtn" data-key="form_submit">إرسال الطلب</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/lang.js"></script>
+    <script src="assets/js/main.js"></script>
+    
+    <!-- Products Filter Script -->
+    <script>
+        // Filter functionality
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                // Remove active class from all buttons
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                // Add active class to clicked button
+                this.classList.add('active');
+                
+                const filter = this.getAttribute('data-filter');
+                const products = document.querySelectorAll('.product-item');
+                
+                products.forEach(product => {
+                    if (filter === 'all' || product.getAttribute('data-category') === filter) {
+                        product.style.display = 'block';
+                        product.style.animation = 'fadeIn 0.5s ease-in-out';
+                    } else {
+                        product.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Request demo function
+        function requestDemo(productType) {
+            showNotification(`تم إرسال طلب عرض توضيحي لمنتج ${productType}`, 'success');
+        }
+
+        // Add fadeIn animation
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes fadeIn {
+                from { opacity: 0; transform: translateY(20px); }
+                to { opacity: 1; transform: translateY(0); }
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+</body>
+</html>
