@@ -1392,7 +1392,10 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Category Cards */
 .category-card {
-    background: white;
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.703)), url('../../images/our_project/learn\ online.png');
+    background-size: cover; /* لضمان تغطية الصورة للبطاقة بالكامل */
+    background-position: center; /* لتوسيط الصورة */
+    background-repeat: no-repeat; /* لمنع تكرار الصورة */
     padding: 2rem;
     border-radius: var(--border-radius-lg);
     box-shadow: var(--shadow);
